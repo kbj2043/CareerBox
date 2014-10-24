@@ -10,7 +10,6 @@ define(['app',
                 .success(function (data) {
                     callback(data);
                 })
-                .error();
         }
     }]);
 });
