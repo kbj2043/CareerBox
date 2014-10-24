@@ -9,7 +9,8 @@ define(['app',
             $http.get(serverURL + '/member/logout')
                 .success(function (data) {
                     callback(data);
-                });
+                })
+                .error();
         }
     }]);
 });
