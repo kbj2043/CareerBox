@@ -5,20 +5,28 @@ define([
     'jquery',
     'angular',
     'app',
-    'directives/draggable',
     'directives/tmplDraggable',
+    'directives/draggable',
     'services/SavePaper',
-    'services/DealWithMemberReturn',
+    'services/LoadPaper',
     'services/httpLogout'
 ], function(
     $,
     ng,
     app
     ) {
-    app.controller('editorController', ['$scope', '$http', '$compile', 'httpLogout', 'serverURL', 'DealWithMemberReturn', 'SavePaper', function ($scope, $http, $compile, httpLogout, serverURL, DealWithMemberReturn, SavePaper) {
+    app.controller('editorController', ['$scope', '$http', '$compile', 'httpLogout', 'serverURL', 'SavePaper', 'LoadPaper', function ($scope, $http, $compile, httpLogout, serverURL, SavePaper, LoadPaper) {
         //member
         $scope.errors = [];
         $scope.msgs = [];
+
+        $( document ).ready(function() {
+            console.log('ready');
+            LoadPaper($http, function (data) {
+                console.log(data.result);
+                loadPaper(data.result);
+            });
+        });
 
         $scope.logout = function () {
             // 로그아웃 함수
@@ -26,13 +34,46 @@ define([
         };
 
         $scope.callback = function(data){
-            DealWithMemberReturn($scope, data, "index.html");
-        };
 
-        $( document ).ready(function() {
-            console.log('ready');
-            getItemArray();
-        });
+            var href = "index.html";
+
+            // Success
+            if (data.returnCode == '000') {
+                // 성공 메세지
+                $scope.msgs.push("성공하였습니다.");
+
+                // 에디터 화면으로 이동
+                location.href = href //"#/articleEditor";
+            }
+
+            // Invalid Arguments
+            else if (data.returnCode == '001') {
+                // 오류 발생 메세지
+                $scope.msgs.push("오류 발생");
+            }
+
+            // Not Login
+            else if (data.returnCode == '002') {
+                // 로그인 안됬다. 메세지
+                $scope.msgs.push("로그인이 안되어있습니다.");
+
+                // 로그인 시도
+            }
+
+            // Incorrect ID or PW
+            else if (data.returnCode == '101') {
+                // 잘못된 형식의 아이디이거나 패스워드라는 메세지
+                $scope.msgs.push("잘못된 형식의 아이디이거나 패스워드입니다.");
+
+            }
+
+            // Exist Email
+            else if (data.returnCode == '102') {
+                // 이미 존재하는 이메일이라는 메세지
+                $scope.msgs.push("이미 존재하는 이메일입니다.");
+
+            };
+        };
 
         $scope.itemArray = [];
         $scope.itemIndex = 1;
@@ -40,7 +81,8 @@ define([
 
         $scope.save = function () {
 
-            var data = JSON.stringify({items: setItemArray()});
+            var data = JSON.stringify({items: savePaper()});
+
             SavePaper($http, data, function (resultCode) {
                 console.log(resultCode);
                 if (resultCode == 000) {
@@ -54,29 +96,21 @@ define([
             });
         }
 
-        function setItemArray() {
+        function savePaper() {
             var itemArray = [];
 
-            var obj;
             for (var i = 0; i < $scope.itemArray.length; i++) {
-                obj = $scope.itemArray[i].value;
-
-                var item = new Object();
-                item._id = $scope.itemArray[i].key;
-                item.type = obj[0].getAttribute("type");
-                item.pos = {x: obj.position().left, y: obj.position().top};
-                item.size = {width: obj.width(), height: obj.height()};
-
-                itemArray.push(item);
+                itemArray.push($scope.itemArray[i].value);
             }
 
             return itemArray;
         }
 
 
-        function createElement(item){
-            var text = "<div draggable id=\"text\" class=\"element\" idx="+item._id+"><h3>text</h3></div>";
-            var image = "<div draggable id=\"image\" class=\"element\" idx="+item._id+"><h3>image</h3></div>";
+        function loadElement(item){
+            console.log(item);
+            var text = "<div draggable id=\"text\" class=\"element\" _id="+item._id+" type=\"text\"><h3>text</h3></div>";
+            var image = "<div draggable id=\"image\" class=\"element\" _id="+item._id+" type=\"image\"><h3>image</h3></div>";
 
             var addObj;
             if(item.type == 'text'){
@@ -92,33 +126,46 @@ define([
 
         }
 
-        function getItemArray(){
-            var itemArray = [{"_id":1,"type":"text","pos":{"x":407,"y":130},"size":{"width":146,"height":146}},{"_id":2,"type":"image","pos":{"x":612,"y":120},"size":{"width":146,"height":146}}];
+        function loadPaper(data){
+            var itemArray = data;
 
+            var item;
             for(var i = 0; i < itemArray.length; i++){
-                createElement(itemArray[i]);
+                item = itemArray[i];
+                $scope.itemArray.push(item);
+                loadElement(item);
             }
         }
 
-
-
+        // Dropzone에 Drop 되었을 때, Item을 ItemArray에 추가하거나 변경함.
         $scope.pushElement = function (ui, addElement) {
-            var idx = ui.draggable['0'].getAttribute("idx");
-            if (idx == -1) {
+            var _id = ui.draggable['0'].getAttribute("_id");
+            if (_id == '-1') {
                 addElement[0].setAttribute("type", ui.draggable['0'].getAttribute("id"));
-                addElement[0].setAttribute("idx", $scope.itemIndex);
-                var item = new Object();
-                item.key = $scope.itemIndex;
-                item.value = addElement;
-                $scope.itemArray.push(item);
+                addElement[0].setAttribute("_id", $scope.itemIndex);
+                var element = new Object();
+                element.key = $scope.itemIndex;
+                element.value = createItem($scope.itemIndex, addElement);
+                $scope.itemArray.push(element);
                 $scope.itemIndex++;
             } else {
                 for (var i = 0; i < $scope.itemArray.length; i++) {
-                    if (idx == $scope.itemArray[i].key) {
-                        $scope.itemArray[i].value = addElement;
+                    if (_id == $scope.itemArray[i].key) {
+                        addElement[0].setAttribute("status", "edit");
+                        $scope.itemArray[i].value = createItem(addElement);
                     }
                 }
             }
+        }
+
+        function createItem(_id, obj){
+            var item = new Object();
+            item._id = _id;
+            item.type = obj[0].getAttribute("type");
+            item.pos = {x: obj.position().left, y: obj.position().top};
+            item.size = {width: obj.width(), height: obj.height()};
+
+            return item;
         }
 
         //This makes an element Droppable

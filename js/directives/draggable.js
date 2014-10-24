@@ -16,7 +16,7 @@ define([
                     helper: 'original',    // 객체를 복사
                     cursor: 'move',     //
                     tolerance: 'fit',   //
-                    containment: '.template-area'     // 드롭되지 않으면 다시 돌아옴.
+                    containment: '.template-area'    // 드롭되지 않으면 다시 돌아옴.
                 });
             }
         };

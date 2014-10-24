@@ -2,17 +2,15 @@
  * Created by JEONGBORAM-PC-W1 on 2014-10-24.
  */
 define(['app'], function(app) {
-    app.factory('SavePaper', function () {
-        return function ($http, data, callback) {
-            console.log(data);
+    app.factory('LoadPaper', function () {
+        return function ($http, callback) {
             $http({
-                method: 'POST',
+                method: 'GET',
                 url: 'http://210.118.74.166:8123/paper',
-                data: data,
                 responseType: 'json',
-	            withCredentials: true
+                withCredentials: true
             }).success(function (data) {
-                callback(data.returnCode);
+                callback(data);
             });
         }
     });
