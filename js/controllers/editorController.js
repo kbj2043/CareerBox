@@ -11,17 +11,13 @@ define([
     'services/LoadPaper',
     'services/httpLogout',
     'services/memberCallback'
-], function(
-    $,
-    ng,
-    app
-    ) {
-    app.controller('editorController', ['$scope', '$http', 'httpLogout', 'serverURL', 'SavePaper', 'LoadPaper', 'memberCallback', function ($scope, $http, httpLogout, serverURL, SavePaper, LoadPaper, memberCallback) {
+], function ($, ng, app) {
+    app.controller('editorController', ['$scope', '$http', '$compile', 'httpLogout', 'serverURL', 'SavePaper', 'LoadPaper', 'memberCallback', function ($scope, $http, $compile, httpLogout, serverURL, SavePaper, LoadPaper, memberCallback) {
         //member
         $scope.errors = [];
         $scope.msgs = [];
 
-        $( document ).ready(function() {
+        $(document).ready(function () {
             console.log('ready');
             LoadPaper($http, function (data) {
                 console.log(data.result);
@@ -34,7 +30,7 @@ define([
             httpLogout($scope.callback);
         };
 
-        $scope.callback = function(data){
+        $scope.callback = function (data) {
 
             var href = "index.html";
 
@@ -48,14 +44,14 @@ define([
 
         $scope.save = function () {
 
-            var data = JSON.stringify({items: getItemDao()});
+            var data = JSON.stringify({items: savePaper()});
             SavePaper($http, data, function (resultCode) {
                 console.log(resultCode);
                 if (resultCode == 000) {
                     alert('Success');
                 } else if (resultCode === 001) {
                     alert('Invalid Arguments');
-                } else if (resultCode === 002){
+                } else if (resultCode === 002) {
                     alert('Not Login');
                     // login 페이지로 이동
                 }
@@ -73,33 +69,32 @@ define([
         }
 
 
-        function loadElement(item){
-            console.log(item);
-            var text = "<div draggable id=\"text\" class=\"element\" _id="+item._id+" type=\"text\"><h3>text</h3></div>";
-            var image = "<div draggable id=\"image\" class=\"element\" _id="+item._id+" type=\"image\"><h3>image</h3></div>";
+        function loadElement(item) {
+            var text = "<div draggable id=\"text\" class=\"element\" _id=" + item._id + " type=\"text\"><h3>text</h3></div>";
+            var image = "<div draggable id=\"image\" class=\"element\" _id=" + item._id + " type=\"image\"><h3>image</h3></div>";
 
             var addObj;
-            if(item.type == 'text'){
+            if (item.type == 'text') {
                 addObj = text;
-            }else if(item.type == 'image'){
+            } else if (item.type == 'image') {
                 addObj = image;
             }
 
             $('.template-area').append(addObj);
 
             $compile($('.template-area'))($scope);
-
-
         }
 
-        function loadPaper(data){
+        function loadPaper(data) {
             var itemArray = data;
 
             var item;
-            for(var i = 0; i < itemArray.length; i++){
-                item = itemArray[i];
+            for (var i = 0; i < itemArray.length; i++) {
+                item = new Object();
+                item.key = itemArray[i]._id;
+                item.value = itemArray[i];
                 $scope.itemArray.push(item);
-                loadElement(item);
+                loadElement(item.value);
             }
         }
 
@@ -107,6 +102,7 @@ define([
         $scope.pushElement = function (ui, addElement) {
             var _id = ui.draggable['0'].getAttribute("_id");
             if (_id == '-1') {
+                console.log('new');
                 addElement[0].setAttribute("type", ui.draggable['0'].getAttribute("id"));
                 addElement[0].setAttribute("_id", $scope.itemIndex);
                 var element = new Object();
@@ -124,7 +120,7 @@ define([
             }
         }
 
-        function createItem(_id, obj){
+        function createItem(_id, obj) {
             var item = new Object();
             item._id = _id;
             item.type = obj[0].getAttribute("type");
