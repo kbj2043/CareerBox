@@ -9,7 +9,8 @@ define(['app'], function(app) {
                 method: 'POST',
                 url: 'http://210.118.74.166:8123/paper',
                 data: {itemDao: data},
-                responseType: 'json'
+                responseType: 'json',
+	            withCredentials: true
             }).success(function (data) {
                 callback(data.returnCode);
             });
