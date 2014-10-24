@@ -11,7 +11,8 @@ require.config({
         'jquery': '../libs/jquery/jquery.min',
         'jquery-ui':'../libs/jquery/jquery-ui.min',
         'domReady': '../libs/require/domReady',
-        'component': '../component'
+        'component': '../component',
+        'twitter-bootstrap':'../libs/bootstrap/bootstrap.min'
     },
 
     shim: {
@@ -28,6 +29,11 @@ require.config({
         'jquery-ui': {
             deps: ['jquery'],
             exports: 'jquery-ui'
+        },
+
+        'twitter-bootstrap': {
+            deps: ['jquery'],
+            exports: 'twitter-bootstrap'
         }
     }
 });
@@ -40,7 +46,7 @@ require([
 
     require([
         'bootstrap',
-        'controllers/' + cntl
+            'controllers/' + cntl
     ], function () {
     });
 });

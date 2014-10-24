@@ -3,7 +3,8 @@
  */
 define([
     'angular',
-    'angular-route'
+    'angular-route',
+    'twitter-bootstrap'
 ], function (ng) {
     'use strict';
 
