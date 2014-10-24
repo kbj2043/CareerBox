@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <title> editor </title>
+
+    <!--css 적용-->
+    <link rel="stylesheet" href="css/dropzones.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="editorController">
+<!--로그아웃-->
+<button ng-click='logout();' style='margin-left: 30px;margin-top:10px'>logout</button>
+
+<ul>
+    <li class="err" ng-repeat="error in errors"> {{error}}</li>
+</ul>
+<ul>
+    <li class="info" ng-repeat="msg in msgs"> {{msg}}</li>
+</ul>
+
+<hr>
+
+<!--드래그 할 요소들을 모아 놓은 박스-->
+<div id="drag-box" class="clearfix">
+
+    <div id="drag-title">
+        <h2>Drag me</h2>
+    </div>
+
+    <div id="drag-content">
+
+        <div draggable id="text" class="element" idx="-1">
+
+            <h3>text</h3>
+        </div>
+
+        <div draggable id="image" class="element" idx="-1">
+            <h3>image</h3>
+        </div>
+
+    </div>
+
+</div>
+
+<!--요소들을 드래그하여 배치 할 canvas-->
+<div id="canvas-box" class="clearfix">
+
+    <div id="canvas-title">
+        <h2>Canvas</h2>
+    </div>
+
+    <div id="canvas-content" class="dropzone template-area">
+    </div>
+
+</div>
+
+<div>
+    <hr>
+    <button id="btnSave" ng-click="save()">저장</button>
+</div>
+
+<script src="libs/require/require.js" data-main="main.js"></script>
+</body>
+</html>

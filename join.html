@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Join </title>
+</head>
+<body ng-controller="joinController">
+<a href="login.html" > 로그인 </a>
+
+<form name="joinForm" ng-submit='join()'>
+
+    <h1>Join Form</h1>
+
+    <div>
+        <label>Email</label>
+        <input type="email" name="email" ng-model="userEmail" style='margin-left: 22px;' ng-required="true"
+               ng-pattern="/^([\w\.-]+)@([a-z\d\.-]+)\.([a-z\.]{2,6})$/">
+        <span ng-show="joinForm.email.$error.pattern">입력하신 이메일형식이 유효하지 않습니다. </span>
+        <span ng-show="joinForm.email.$error.required">이메일을 입력하세요.</span>
+    </div>
+
+    <div>
+        <label>Password</label>
+        <input type="password" name="password" ng-model="userPassword" ng-required="true"
+               ng-pattern="/^[a-z0-9_-]{6,18}$/">
+        <span ng-show="joinForm.password.$error.pattern">패스워드는 6자이상 18자이하입니다. </span>
+        <span ng-show="joinForm.password.$error.required">패스워드를 입력하세요.</span>
+    </div>
+
+    <div>
+        <label>Password Reconfirm</label>
+        <input type="password" name="passwordReconfirm" ng-model="userPasswordReconfirm" ng-required="true"/>
+        <span ng-show="joinForm.passwordReconfirm.$error.required">패스워드를 다시 입력해주세요.</span>
+    </div>
+
+    <input type="submit" value="join"
+           ng-show="!joinForm.email.$error.pattern && !joinForm.email.$error.required && !joinForm.password.$error.pattern && !joinForm.password.$error.required && !joinForm.passwordReconfirm.$error.required"/>
+
+    <ul>
+        <li class="err" ng-repeat="error in errors"> {{error}}</li>
+    </ul>
+    <ul>
+        <li class="info" ng-repeat="msg in msgs"> {{msg}}</li>
+    </ul>
+
+
+</form>
+<script src="libs/require/require.js" data-main="main.js"></script>
+</body>
+</html>

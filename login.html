@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body ng-controller="loginController">
+
+<a href="join.html"> 회원가입 </a>
+<form name="loginForm" ng-submit='login()'>
+
+    <h1>Login Form</h1>
+
+    <div>
+        <label>Email</label>
+        <input type="email" name="email" ng-model="userEmail" style='margin-left: 22px;' ng-required="true"
+               ng-pattern="/^([\w\.-]+)@([a-z\d\.-]+)\.([a-z\.]{2,6})$/">
+        <span ng-show="loginForm.email.$error.pattern">입력하신 이메일형식이 유효하지 않습니다. </span>
+        <span ng-show="loginForm.email.$error.required">이메일을 입력하세요.</span>
+    </div>
+
+    <div>
+        <label>Password</label>
+        <input type="password" name="password" ng-model="userPassword" ng-required="true"
+               ng-pattern="/^[a-z0-9_-]{6,18}$/" minlength="6" ng-maxlength="18">
+        <span ng-show="loginForm.password.$error.pattern">패스워드는 6자이상 18자이하입니다. </span>
+        <span ng-show="loginForm.password.$error.required">패스워드를 입력하세요.</span>
+    </div>
+
+    <input type="submit" value="login"
+           ng-show="!loginForm.email.$error.pattern && !loginForm.email.$error.required && !loginForm.password.$error.pattern && !loginForm.password.$error.required"/>
+
+    <ul>
+        <li class="err" ng-repeat="error in errors"> {{error}}</li>
+    </ul>
+    <ul>
+        <li class="info" ng-repeat="msg in msgs"> {{msg}}</li>
+    </ul>
+
+</form>
+<script src="libs/require/require.js" data-main="main.js"></script>
+</body>
+</html>
