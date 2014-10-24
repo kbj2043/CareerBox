@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AngularRequire_ver2.iml" filepath="$PROJECT_DIR$/.idea/AngularRequire_ver2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CareerBox.iml" filepath="$PROJECT_DIR$/.idea/CareerBox.iml" />
     </modules>
   </component>
 </project>

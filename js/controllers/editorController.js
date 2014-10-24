@@ -6,6 +6,7 @@ define([
     'angular',
     'app',
     'directives/draggable',
+    'directives/tmplDraggable',
     'services/SavePaper',
     'services/DealWithMemberReturn',
     'services/httpLogout'
@@ -14,7 +15,7 @@ define([
     ng,
     app
     ) {
-    app.controller('editorController', ['$scope', '$http', 'httpLogout', 'serverURL', 'DealWithMemberReturn', 'SavePaper', function ($scope, $http, httpLogout, serverURL, DealWithMemberReturn, SavePaper) {
+    app.controller('editorController', ['$scope', '$http', '$compile', 'httpLogout', 'serverURL', 'DealWithMemberReturn', 'SavePaper', function ($scope, $http, $compile, httpLogout, serverURL, DealWithMemberReturn, SavePaper) {
         //member
         $scope.errors = [];
         $scope.msgs = [];
@@ -28,13 +29,18 @@ define([
             DealWithMemberReturn($scope, data, "index.html");
         };
 
+        $( document ).ready(function() {
+            console.log('ready');
+            getItemArray();
+        });
+
         $scope.itemArray = [];
         $scope.itemIndex = 1;
 
 
         $scope.save = function () {
 
-            var data = JSON.stringify({items: getItemDao()});
+            var data = JSON.stringify({items: setItemArray()});
             SavePaper($http, data, function (resultCode) {
                 console.log(resultCode);
                 if (resultCode == 000) {
@@ -48,24 +54,53 @@ define([
             });
         }
 
-        function getItemDao() {
-            var itemDaoArray = [];
+        function setItemArray() {
+            var itemArray = [];
 
             var obj;
             for (var i = 0; i < $scope.itemArray.length; i++) {
                 obj = $scope.itemArray[i].value;
 
-                var itemDao = new Object();
-                itemDao._id = $scope.itemArray[i].key;
-                itemDao.type = obj[0].getAttribute("type");
-                itemDao.pos = {x: obj.position().left, y: obj.position().top};
-                itemDao.size = {width: obj.width(), height: obj.height()};
+                var item = new Object();
+                item._id = $scope.itemArray[i].key;
+                item.type = obj[0].getAttribute("type");
+                item.pos = {x: obj.position().left, y: obj.position().top};
+                item.size = {width: obj.width(), height: obj.height()};
 
-                itemDaoArray.push(itemDao);
+                itemArray.push(item);
             }
 
-            return itemDaoArray;
+            return itemArray;
         }
+
+
+        function createElement(item){
+            var text = "<div draggable id=\"text\" class=\"element\" idx="+item._id+"><h3>text</h3></div>";
+            var image = "<div draggable id=\"image\" class=\"element\" idx="+item._id+"><h3>image</h3></div>";
+
+            var addObj;
+            if(item.type == 'text'){
+                addObj = text;
+            }else if(item.type == 'image'){
+                addObj = image;
+            }
+
+            $('.template-area').append(addObj);
+
+            $compile($('.template-area'))($scope);
+
+
+        }
+
+        function getItemArray(){
+            var itemArray = [{"_id":1,"type":"text","pos":{"x":407,"y":130},"size":{"width":146,"height":146}},{"_id":2,"type":"image","pos":{"x":612,"y":120},"size":{"width":146,"height":146}}];
+
+            for(var i = 0; i < itemArray.length; i++){
+                createElement(itemArray[i]);
+            }
+        }
+
+
 
         $scope.pushElement = function (ui, addElement) {
             var idx = ui.draggable['0'].getAttribute("idx");
