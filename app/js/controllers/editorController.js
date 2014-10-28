@@ -40,7 +40,6 @@ define([
         };
 
         $scope.save = function () {
-
             var data = JSON.stringify({items: savePaper()});
             SavePaper($http, data, function (resultCode) {
                 console.log(resultCode);
@@ -56,6 +55,8 @@ define([
         }
 
         function savePaper() {
+            var canvas_top = $('#canvas-content').position().top;
+            var canvas_left = $('#canvas-content').position().left;
             var itemArray = [];
 
             var obj;
@@ -84,21 +85,24 @@ define([
         $scope.count = 0;
 
         function loadElement(item) {
+            console.log(item);
             var text = "<div draggable id="+item._id+" class=\"element\" _id=" + item._id + " type=\"text\"><h3>text</h3></div>";
             var image = "<div draggable id="+item._id+" class=\"element\" _id=" + item._id + " type=\"image\"><h3>image</h3></div>";
 
             var addObj;
             if (item.type == 'text') {
+                console.log('tt');
                 addObj = text;
             } else if (item.type == 'image') {
+
                 addObj = image;
             }
 
-            $('.template-area').append(addObj);
+            $('#canvas-content').append(addObj);
 
             //스타일 적용
 //            $( '#'+item._id).css("z-index", $scope.count++);
-            $( '#'+item._id).css("position", 'absolute');
+            $( '#'+item._id).css('position', 'absolute');
             $( '#'+item._id).width(item.size.width);
             $( '#'+item._id).height(item.size.height);
             $( '#'+item._id).offset({top:item.pos.y, left:item.pos.x});
@@ -109,6 +113,9 @@ define([
         }
 
         function loadPaper(data) {
+            if(data == null){
+                return;
+            }
             var itemArray = data;
 
             var item;
@@ -125,7 +132,7 @@ define([
         $scope.pushElement = function (ui, addElement) {
             var _id = ui.draggable['0'].getAttribute("_id");
             if (_id == '-1') {
-                console.log('new');
+//                console.log('new');
                 addElement[0].setAttribute("type", ui.draggable['0'].getAttribute("type"));
                 addElement[0].setAttribute("_id", $scope.itemIndex);
                 var element = new Object();
@@ -134,7 +141,7 @@ define([
                 $scope.itemArray.push(element);
                 $scope.itemIndex++;
             } else {
-                console.log('exist');
+//                console.log('exist');
                 for (var i = 0; i < $scope.itemArray.length; i++) {
                     if (_id == $scope.itemArray[i].key) {
                         addElement[0].setAttribute("status", "edit");
