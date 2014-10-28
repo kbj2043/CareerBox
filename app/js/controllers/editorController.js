@@ -17,10 +17,11 @@ define([
         $scope.errors = [];
         $scope.msgs = [];
 
+        $scope.itemArray = [];
+        $scope.itemIndex = 1;
+
         $(document).ready(function () {
-            console.log('ready');
             LoadPaper($http, function (data) {
-                console.log(data.result);
                 loadPaper(data.result);
             });
         });
@@ -37,10 +38,6 @@ define([
             memberCallback($scope, data, href);
 
         };
-
-        $scope.itemArray = [];
-        $scope.itemIndex = 1;
-
 
         $scope.save = function () {
 
@@ -61,17 +58,34 @@ define([
         function savePaper() {
             var itemArray = [];
 
+            var obj;
             for (var i = 0; i < $scope.itemArray.length; i++) {
-                itemArray.push($scope.itemArray[i].value);
+                obj = $scope.itemArray[i].value;
+                if(!(obj.status == 'new' || obj.status == 'edit'))
+                    continue;
+
+                var item = new Object();
+                if(obj.status == 'new'){
+                    item._id = "";
+                }else{
+                    item._id = obj._id;
+                }
+
+                item.type = obj.type;
+                item.pos = {x: obj.pos.x, y: obj.pos.y};
+                item.size = {width: obj.size.width, height: obj.size.height};
+
+                itemArray.push(item);
             }
 
             return itemArray;
         }
 
+        $scope.count = 0;
 
         function loadElement(item) {
-            var text = "<div draggable id=\"text\" class=\"element\" _id=" + item._id + " type=\"text\"><h3>text</h3></div>";
-            var image = "<div draggable id=\"image\" class=\"element\" _id=" + item._id + " type=\"image\"><h3>image</h3></div>";
+            var text = "<div draggable id="+item._id+" class=\"element\" _id=" + item._id + " type=\"text\"><h3>text</h3></div>";
+            var image = "<div draggable id="+item._id+" class=\"element\" _id=" + item._id + " type=\"image\"><h3>image</h3></div>";
 
             var addObj;
             if (item.type == 'text') {
@@ -82,7 +96,16 @@ define([
 
             $('.template-area').append(addObj);
 
+            //스타일 적용
+//            $( '#'+item._id).css("z-index", $scope.count++);
+            $( '#'+item._id).css("position", 'absolute');
+            $( '#'+item._id).width(item.size.width);
+            $( '#'+item._id).height(item.size.height);
+            $( '#'+item._id).offset({top:item.pos.y, left:item.pos.x});
+
             $compile($('.template-area'))($scope);
+
+
         }
 
         function loadPaper(data) {
@@ -103,7 +126,7 @@ define([
             var _id = ui.draggable['0'].getAttribute("_id");
             if (_id == '-1') {
                 console.log('new');
-                addElement[0].setAttribute("type", ui.draggable['0'].getAttribute("id"));
+                addElement[0].setAttribute("type", ui.draggable['0'].getAttribute("type"));
                 addElement[0].setAttribute("_id", $scope.itemIndex);
                 var element = new Object();
                 element.key = $scope.itemIndex;
@@ -111,10 +134,11 @@ define([
                 $scope.itemArray.push(element);
                 $scope.itemIndex++;
             } else {
+                console.log('exist');
                 for (var i = 0; i < $scope.itemArray.length; i++) {
                     if (_id == $scope.itemArray[i].key) {
                         addElement[0].setAttribute("status", "edit");
-                        $scope.itemArray[i].value = createItem(addElement);
+                        $scope.itemArray[i].value = createItem(_id, addElement);
                     }
                 }
             }
@@ -126,7 +150,7 @@ define([
             item.type = obj[0].getAttribute("type");
             item.pos = {x: obj.position().left, y: obj.position().top};
             item.size = {width: obj.width(), height: obj.height()};
-
+            item.status = obj[0].getAttribute("status");
             return item;
         }
 
