@@ -6,6 +6,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="AngularRequire_CareerBox node_modules" level="project" />
     <orderEntry type="library" name="CareerBox node_modules" level="project" />
+    <orderEntry type="library" name="angularjs-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="karma-jasmine-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="requirejs-DefinitelyTyped" level="application" />
   </component>
 </module>
 
