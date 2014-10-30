@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$" libraries="{AngularRequire_CareerBox node_modules, CareerBox node_modules}" />
-    <file url="PROJECT" libraries="{angularjs-DefinitelyTyped, jasmine-DefinitelyTyped, karma-jasmine-DefinitelyTyped, requirejs-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$" libraries="{CareerBox node_modules}" />
+    <file url="file://$PROJECT_DIR$/test" libraries="{karma-jasmine}" />
+    <file url="PROJECT" libraries="{angularjs-DefinitelyTyped, jasmine-DefinitelyTyped, requirejs-DefinitelyTyped}" />
   </component>
 </project>
 
