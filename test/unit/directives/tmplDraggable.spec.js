@@ -1,14 +1,15 @@
 /*global describe beforeEach it expect */
 'use strict';
 define([
+    'angularMocks', // 반드시 주입해주어야함.
     'directives/tmplDraggable'
+
 ], function() {
 
-
-    describe('directives', function() {
+    describe('tmplDraggable', function() {
         var $compile, $rootScope;
 
-        beforeEach(angular.mock.module('myApp'));
+        beforeEach(module('myApp'));
 
         beforeEach(inject(
             ['$compile','$rootScope', function($c, $r) {

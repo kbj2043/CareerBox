@@ -42,7 +42,7 @@ require([
     'jquery'
 ], function ($) {
 
-    var cntl = $('body').attr('ng-controller');
+    var cntl = $('body').attr('ng-controllers');
 
     require([
         'bootstrap',
