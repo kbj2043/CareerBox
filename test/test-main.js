@@ -50,6 +50,7 @@ require.config({
     },
 
     // dynamically load all test files
+//    deps: allTestFiles,
     deps: tests,
 
     // we have to kickoff jasmine, as it is asynchronous
