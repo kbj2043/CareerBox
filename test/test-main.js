@@ -1,30 +1,25 @@
-var allTestFiles = [];
-var TEST_REGEXP = /(spec|test)\.js$/i;
-
-var pathToModule = function(path) {
-    return path.replace(/^\/base\//, '').replace(/\.js$/, '');
-};
-
-Object.keys(window.__karma__.files).forEach(function(file) {
-    if (TEST_REGEXP.test(file)) {
-        // Normalize paths to RequireJS module names.
-        allTestFiles.push(pathToModule(file));
+var tests = [];
+for (var file in window.__karma__.files) {
+    if (window.__karma__.files.hasOwnProperty(file)) {
+        if (/spec\.js$/i.test(file)) {
+            tests.push(file);
+        }
     }
-});
+}
 
 require.config({
     // Karma serves files under /base, which is the basePath from your config file
-    baseUrl: '/base',
+    baseUrl: '/base/app/js',
 
     paths: {
-        'angular': 'app/libs/angular/angular',
-        'angular-route': 'app/libs/angular/angular-route',
-        'jquery': 'app/libs/jquery/jquery.min',
-        'jquery-ui':'app/libs/jquery/jquery-ui.min',
-        'domReady': 'app/libs/require/domReady',
-        'component': 'app/component',
-        'twitter-bootstrap':'app/libs/bootstrap/bootstrap.min',
-        'angularMocks': 'app/libs/angular/angular-mocks'
+        'angular': '/base/app/libs/angular/angular',
+        'angular-route': '/base/app/libs/angular/angular-route',
+        'jquery': '/base/app/libs/jquery/jquery.min',
+        'jquery-ui':'/base/app/libs/jquery/jquery-ui.min',
+        'domReady': '/base/app/libs/require/domReady',
+        'component': '/base/app/component',
+        'twitter-bootstrap':'/base/app/libs/bootstrap/bootstrap.min',
+        'angularMocks': '/base/app/libs/angular/angular-mocks'
     },
 
     shim: {
@@ -55,7 +50,7 @@ require.config({
     },
 
     // dynamically load all test files
-    deps: allTestFiles,
+    deps: tests,
 
     // we have to kickoff jasmine, as it is asynchronous
     callback: window.__karma__.start
