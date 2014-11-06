@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CareerBox Editor</title>
+
+    <link href="../../node_modules/kendo-ui-core/dist/styles/web/kendo.common.core.css" rel="stylesheet" />
+    <link href="../../node_modules/kendo-ui-core/dist/styles/web/kendo.default.css" rel="stylesheet" />
+    <link href="../css/portfolioEditor.css" rel="stylesheet">
+    <link href="../libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!--<script src="../../node_modules/kendo-ui-core/src/jquery.js"></script>-->
+    <!--<script src="../../node_modules/kendo-ui-core/src/kendo.core.js"></script>-->
+    <!--<script src="../../node_modules/kendo-ui-core/src/kendo.userevents.js"></script>-->
+    <!--<script src="../../node_modules/kendo-ui-core/src/kendo.draganddrop.js"></script>-->
+    <!--<script src="../../node_modules/kendo-ui-core/src/kendo.resizable.js"></script>-->
+    <!--<script src="../../node_modules/kendo-ui-core/src/kendo.splitter.js"></script>-->
+
+
+</head>
+<body ng-controller="portfolioEditor">
+<div id="top-pane">
+    <h1>Career Box</h1>
+</div>
+<div id="bottom-pane">
+    <div id="editor">
+        <div id="pageEditor">
+            <div id="pageSelect" class="btn-group">
+                <button type="button" class="pageNum btn btn-default">Page1</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#">Page1</a>
+                        <button type="button" class="delete btn btn-primary" data-toggle="button">-</button>
+                    </li>
+                    <li>
+                        <a href="#">Page2</a>
+                        <button type="button" class="delete btn btn-primary" data-toggle="button">-</button>
+                    </li>
+                    <li>
+                        <a href="#">Page3</a>
+                        <button type="button" class="delete btn btn-primary" data-toggle="button">-</button>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" class="btn btn-primary" data-toggle="button">+ New</button>
+        </div>
+        <div id="otherEditor">
+            <ul class="nav nav-tabs nav-justified" id="editorTab">
+                <li class="active"><a href="#section">section</a></li>
+                <li><a href="#article">article</a></li>
+                <li><a href="#item">item</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="section">section</div>
+                <div class="tab-pane" id="article">article</div>
+                <div class="tab-pane" id="item">item</div>
+            </div>
+        </div>
+    </div>
+    <div id="page">
+        <h3>Page</h3>
+    </div>
+    <div id="attribute">
+        <h3>Attribute</h3>
+        <div class="tab-content">
+            <div class="tab-pane active" id="sectionAttr">section attribute</div>
+            <div class="tab-pane" id="articleAttr">article attribute</div>
+            <div class="tab-pane" id="itemAttr">item attribute</div>
+        </div>
+    </div>
+</div>
+<script src="../libs/require/require.js" data-main="../main.js"></script>
+</body>
+</html>
