@@ -4,9 +4,10 @@
 define([
     'angular',
     'angular-route',
-    'twitter-bootstrap'
+    'twitter-bootstrap',
+    'kendo'
 ], function (ng) {
     'use strict';
 
-    return ng.module('myApp', []);
+    return ng.module('myApp', ['kendo.directives']);
 });
