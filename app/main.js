@@ -9,17 +9,18 @@ require.config({
         'angular': '../libs/angular/angular',
         'angular-route': '../libs/angular/angular-route',
         'jquery': '../libs/jquery/jquery.min',
-        'jquery-ui': '../libs/jquery/jquery-ui.min',
+        'jquery-ui':'../libs/jquery/jquery-ui.min',
         'domReady': '../libs/require/domReady',
         'component': '../component',
-        'twitter-bootstrap': '../libs/bootstrap/bootstrap.min',
-        'kendo.core' : '../libs/kendo/js/kendo.core.min',
-        'kendo.userevents' : '../libs/kendo/js/kendo.userevents.min',
-        'kendo.draganddrop' : '../libs/kendo/js/kendo.draganddrop.min',
-        'kendo.resizable' : '../libs/kendo/js/kendo.resizable.min',
-        'kendo.splitter' : '../libs/kendo/js/kendo.core.splitter.min'
+        'twitter-bootstrap':'../libs/bootstrap/bootstrap.min',
+        'kendo':'../libs/kendo/js/kendo.custom'
     },
+
     shim: {
+        'kendo':{
+            deps: ['angular', 'jquery'],
+            exports: 'kendo'
+        },
         'angular': {
             deps: ['jquery'],
             exports: 'angular'
@@ -48,7 +49,9 @@ require([
 
     var cntl = $('body').attr('ng-controller');
 
-    require(['bootstrap', 'controllers/' + cntl
+    require([
+        'bootstrap',
+            'controllers/' + cntl
     ], function () {
     });
 });
