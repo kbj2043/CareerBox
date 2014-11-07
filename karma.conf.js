@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Thu Oct 30 2014 22:33:30 GMT+0900 (KST)
 
-module.exports = function(config) {
+module.exports = function (config) {
     config.set({
 
         // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -65,6 +65,15 @@ module.exports = function(config) {
 
         // Continuous Integration mode
         // if true, Karma captures browsers, runs the tests and exits
-        singleRun: false
+        singleRun: false,
+
+        // test results reporter to use
+        // possible values: dots || progress || growl
+        reporters: ['progress', 'coverage'],
+
+        coverageReporter: {
+            type: 'html',
+            dir: 'coverage/'
+        }
     });
 };
