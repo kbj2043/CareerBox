@@ -2,9 +2,360 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71206ed1-6706-4790-a363-0a12526a1b5b" name="Default" comment="karma">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="$PROJECT_DIR$/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test-main.js" afterPath="$PROJECT_DIR$/test/test-main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Default/editor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Flat/editor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Default/imagebrowser.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Default/loading-image.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Flat/loading-image.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Flat/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Default/loading_2x.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Flat/slider-h.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Flat/slider-v.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Default/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Flat/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/Flat/sprite_2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/styles/web/kendo.common.core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/kendo/js/kendo.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/partials/portfolioEditor.html" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.af-ZA.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.af.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.am-ET.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.am.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-AE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-AE.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-DZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-EG.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-EG.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-JO.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-KW.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-LB.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-LY.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-OM.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-OM.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar-SY.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.arn-CL.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.as.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.az-Cyrl-AZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.az-Latn-AZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.az-Latn.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.az.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ba.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.be.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.bo-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.bo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.br-FR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.bs-Cyrl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.bs-Cyrl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.bs-Latn-BA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.bs.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ca.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.co-FR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.cs-CZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.cy-GB.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.cy-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.cy.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.cy.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.da-DK.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.da.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.de-AT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.de-LU.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.dv-MV.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.dv-MV.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.dv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.el-GR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.el.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-029.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-BZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-BZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-JM.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-MY.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-NZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-SG.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-US.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en-ZW.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.en.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-CL.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-CL.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-CO.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-CR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-GT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-PR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-PY.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-PY.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-SV.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-US.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-UY.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-UY.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es-VE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.es.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.et.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.et.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.eu-ES.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.fil-PH.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.fil.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.fr-BE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.fr-CA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.fr-LU.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.fr-MC.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.fr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.fy-NL.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gd-GB.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gd-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gd.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gl-ES.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gsw-FR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gu-IN.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gu-IN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.gu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ha-Latn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ha.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ha.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.he-IL.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.he.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hi-IN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hr-HR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hsb-DE.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hsb.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hsb.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hu-HU.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hy-AM.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.hy.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.id-ID.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.id.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.id.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ig.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ii-CN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ii.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.is-IS.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.is-IS.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.is.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.it-CH.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.it.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.it.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.iu-Cans-CA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.iu-Cans.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.iu-Latn-CA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.iu-Latn.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.iu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ja.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ja.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.kk-KZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.kk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.kk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.kl-GL.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.kl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.km-KH.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ko-KR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.kok.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ky-KG.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.lb-LU.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.lb.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.lo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.lo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.lv-LV.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.lv-LV.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.lv.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.mi-NZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.mi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.mk-MK.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.mk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ml-IN.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ml-IN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.mn-MN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.mn-Mong.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.mr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ms-BN.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ms-BN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ms.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.mt-MT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.nb-NO.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.nb-NO.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ne-NP.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ne.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.nl-NL.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.nl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.no.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.nso.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.oc.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.pl-PL.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.pl-PL.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.pl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.prs-AF.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ps-AF.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.pt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.qut-GT.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.qut-GT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.quz-BO.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.quz-BO.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.quz.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.rm-CH.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.rm-CH.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.rm.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ro-RO.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ro.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ru-RU.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ru-UA.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.rw-RW.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sa-IN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sa.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sah-RU.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sah-RU.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sah.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.se-NO.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.se-SE.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.si.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sl-SI.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sma-NO.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sma.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.smj-SE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.smj-SE.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.smn.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sms.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sq-AL.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sr-Cyrl-ME.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sr-Cyrl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sr-Cyrl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sr-Latn-RS.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sr-Latn.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sv-FI.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sv-FI.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sw-KE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sw.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.sw.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.syr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ta-IN.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ta-IN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.te-IN.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.tk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.tn-ZA.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.tn-ZA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.tr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.tzm-Latn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ug-CN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.uk-UA.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.ur-PK.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.uz-Cyrl-UZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.uz-Cyrl-UZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.uz-Latn-UZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.uz-Latn.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.vi-VN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.vi.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.wo-SN.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.xh-ZA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.xh.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.yo-NG.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.zh-CHS.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.zh-Hans.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.zh-Hans.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.zh-Hant.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.zh-SG.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.zu-ZA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.zu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\cultures\kendo.culture.zu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.angular.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.autocomplete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.binder.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.binder.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.binder.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.button.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.button.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.calendar.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.color.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.combobox.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.custom.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.data.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.data.xml.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.datepicker.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.datetimepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.datetimepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.draganddrop.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.dropdownlist.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.dropdownlist.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.dropdownlist.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.editable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.fx.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.fx.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.list.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.list.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.listview.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.listview.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.listview.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.maskedtextbox.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.maskedtextbox.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.actionsheet.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.button.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.button.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.buttongroup.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.buttongroup.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.buttongroup.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.drawer.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.drawer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.modalview.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.modalview.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.modalview.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.navbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.pane.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.shim.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.splitview.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.switch.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.view.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.view.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.mobile.view.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.multiselect.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.notification.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.notification.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.numerictextbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.panelbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.panelbar.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.popup.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.resizable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.resizable.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.router.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.router.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.router.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.selectable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.slider.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.sortable.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.tabstrip.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.timepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.timepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.touch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.userevents.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.userevents.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\kendo.view.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.cs-CZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.da-DK.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.de-DE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.en-US.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.fr-FR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.nl-NL.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.pl-PL.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.pt-BR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.pt-PT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.sv-SE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.sv-SE.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.uk-UA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\CareerBox\app\libs\kendo\js\messages\kendo.messages.zh-TW.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="$PROJECT_DIR$/app/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main.js" afterPath="$PROJECT_DIR$/app/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/controllers/portfolioEditor.js" afterPath="$PROJECT_DIR$/app/js/controllers/portfolioEditor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +377,52 @@
     <favorites_list name="AngularRequire_ver2" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editor.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/editor.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1007">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portfolioEditor.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/controllers/portfolioEditor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+              <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portfolioEditor.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/partials/portfolioEditor.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5944134" vertical-offset="0" max-vertical-offset="895">
+              <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+              <folding>
+                <element signature="tag#div#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -73,22 +469,25 @@
         <option value="$PROJECT_DIR$/portfolioManage.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/partials/login.html" />
-        <option value="$PROJECT_DIR$/app/main.js" />
         <option value="$PROJECT_DIR$/app/partials/join.html" />
-        <option value="$PROJECT_DIR$/app/partials/portfolioManage.html" />
         <option value="$PROJECT_DIR$/app/partials/editor.html" />
         <option value="$PROJECT_DIR$/app/js/controllers/editorController.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/helloworld.spec.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/test/test-main.js" />
         <option value="$PROJECT_DIR$/test/unit/helloworld.spec.js" />
         <option value="$PROJECT_DIR$/test/unit/controllersSpec.js" />
         <option value="$PROJECT_DIR$/test/unit/controllers.spec.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/test/unit/editControllerSpec.js" />
-        <option value="$PROJECT_DIR$/test/test-main.js" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
-        <option value="$PROJECT_DIR$/test/unit/EditControllerSpec.js" />
+        <option value="$PROJECT_DIR$/../kendo-ui-core/kendo-ui-core/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/../kendo-ui-core/kendo-ui-core/dist/js/kendo.custom.js" />
+        <option value="$PROJECT_DIR$/app/partials/portfolioManage.html" />
+        <option value="$PROJECT_DIR$/app/main.js" />
+        <option value="$PROJECT_DIR$/app/js/app.js" />
+        <option value="$PROJECT_DIR$/app/js/controllers/portfolioEditor.js" />
+        <option value="$PROJECT_DIR$/app/partials/portfolioEditor.html" />
       </list>
     </option>
   </component>
@@ -98,8 +497,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -175,7 +574,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -213,14 +612,92 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CareerBox2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kendo-ui-core/kendo-ui-core/README.md" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.lastSelected" value="JavaScript.Libraries" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -228,14 +705,16 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/libs/angular" />
-      <recent name="$PROJECT_DIR$/app/libs/require" />
-      <recent name="$PROJECT_DIR$/app/libs" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/test/unit" />
+      <recent name="D:\git\CareerBox\app\libs\kendo\styles\web" />
+      <recent name="D:\git\CareerBox\app\libs\kendo\styles\web\Flat" />
+      <recent name="D:\git\CareerBox\app\libs\kendo\styles\web\Default" />
+      <recent name="D:\git\CareerBox\app\libs\kendo\js" />
+      <recent name="D:\git\CareerBox\app\libs\kendo\js\messages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/unit" />
@@ -251,6 +730,14 @@
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -261,12 +748,14 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
       <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -274,16 +763,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -350,27 +829,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3689168" sideWeight="0.49926794" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.369863" sideWeight="0.49926794" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18281938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.50039715" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.49960285" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30141288" sideWeight="0.4988086" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.49960285" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30396903" sideWeight="0.4988086" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32762313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -401,86 +880,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="323">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="1083">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/controllers/editorController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="3591">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="589">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test-main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1444">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/helloworld.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="304">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/controllers.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="475">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/EditControllerSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="646">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="25" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="323">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
@@ -491,6 +890,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="437">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -498,13 +898,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/libs/require/domReady.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2565">
+        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="2565">
           <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -512,6 +914,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="18696">
           <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -525,8 +928,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test-main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="1292">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="1216">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -559,6 +962,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -574,6 +978,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -589,6 +994,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -613,10 +1019,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/portfolioManage.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="379">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -627,17 +1033,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/editor.html">
+    <entry file="file://$PROJECT_DIR$/test/unit/helloworld.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0547945" vertical-offset="672" max-vertical-offset="1110">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="437">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1140">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test-main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13542795" vertical-offset="293" max-vertical-offset="1216">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -645,6 +1061,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="419">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -652,6 +1069,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
           <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,86 +1077,131 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14760">
           <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../kendo-ui-core/kendo-ui-core/dist/js/kendo.angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="21302" max-vertical-offset="24776">
+          <caret line="1139" column="110" selection-start-line="1139" selection-start-column="110" selection-end-line="1139" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../kendo-ui-core/kendo-ui-core/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.44" vertical-offset="1539" max-vertical-offset="4009">
+          <caret line="100" column="9" selection-start-line="100" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../kendo-ui-core/kendo-ui-core/dist/js/kendo.custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7065934" vertical-offset="381219" max-vertical-offset="389576">
+          <caret line="20098" column="38" selection-start-line="20098" selection-start-column="38" selection-end-line="20098" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../kendo-ui-core/kendo-ui-core/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.020585049" vertical-offset="3724" max-vertical-offset="4978">
+          <caret line="197" column="57" selection-start-line="197" selection-start-column="57" selection-end-line="197" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="589">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.3821229" vertical-offset="0" max-vertical-offset="895">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/main.js">
+    <entry file="file://$PROJECT_DIR$/app/js/controllers/portfolioManage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="1083">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/helloworld.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="58" max-vertical-offset="1596">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test-main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1444">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/controllers/editorController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="3591">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.2881907" vertical-offset="0" max-vertical-offset="3591">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/controllers.spec.js">
+    <entry file="file://$PROJECT_DIR$/app/partials/portfolioManage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.2122905" vertical-offset="0" max-vertical-offset="895">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/EditControllerSpec.js">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65737706" vertical-offset="36" max-vertical-offset="646">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="25" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.2972067" vertical-offset="0" max-vertical-offset="895">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/editor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5519553" vertical-offset="0" max-vertical-offset="1406">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1178">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/editor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1007">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/controllers/portfolioEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/portfolioEditor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5944134" vertical-offset="0" max-vertical-offset="895">
+          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <folding>
+            <element signature="tag#div#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

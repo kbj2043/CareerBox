@@ -12,10 +12,15 @@ require.config({
         'jquery-ui':'../libs/jquery/jquery-ui.min',
         'domReady': '../libs/require/domReady',
         'component': '../component',
-        'twitter-bootstrap':'../libs/bootstrap/bootstrap.min'
+        'twitter-bootstrap':'../libs/bootstrap/bootstrap.min',
+        'kendo':'../libs/kendo/js/kendo.custom'
     },
 
     shim: {
+        'kendo':{
+            deps: ['angular', 'jquery'],
+            exports: 'kendo'
+        },
         'angular': {
             deps: ['jquery'],
             exports: 'angular'

@@ -27,7 +27,7 @@ define([
 
         $scope.callback = function(data){
 
-            var href = "editor.html";
+            var href = "portfolioManage.html";
 
             memberCallback($scope, data, href);
 
