@@ -12,7 +12,7 @@ define([
     ng,
     app
     ) {
-    app.controller('joinController',['$scope', 'httpJoin', 'memberCallback', function ($scope, httpJoin, memberCallback) {
+    app.controller('joinController',['$scope', 'httpJoin', 'memberCallback', '$window', function ($scope, httpJoin, memberCallback, $window) {
         $scope.errors = [];
         $scope.msgs = [];
 
@@ -32,7 +32,7 @@ define([
 
         $scope.callback = function(data){
             var href = "editor.html";
-            memberCallback($scope, data, href);
+            memberCallback($window, $scope, data, href);
         };
 
     }])

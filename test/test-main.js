@@ -19,10 +19,15 @@ require.config({
         'domReady': '/base/app/libs/require/domReady',
         'component': '/base/app/component',
         'twitter-bootstrap':'/base/app/libs/bootstrap/bootstrap.min',
-        'angularMocks': '/base/app/libs/angular/angular-mocks'
+        'angularMocks': '/base/app/libs/angular/angular-mocks',
+        'kendo':'/base/app/libs/kendo/js/kendo.custom'
     },
 
     shim: {
+        'kendo':{
+            deps: ['angular', 'jquery'],
+            exports: 'kendo'
+        },
         'angular': {
             deps: ['jquery'],
             exports: 'angular'

@@ -12,7 +12,7 @@ define([
     'services/httpLogout',
     'services/memberCallback'
 ], function ($, ng, app) {
-    app.controller('editorController', ['$scope', '$http', '$compile', 'httpLogout', 'serverURL', 'SavePaper', 'LoadPaper', 'memberCallback', function ($scope, $http, $compile, httpLogout, serverURL, SavePaper, LoadPaper, memberCallback) {
+    app.controller('editorController', ['$scope', '$http', '$window', '$compile', 'httpLogout', 'serverURL', 'SavePaper', 'LoadPaper', 'memberCallback', function ($scope, $http, $window, $compile, httpLogout, serverURL, SavePaper, LoadPaper, memberCallback) {
         //member
         $scope.errors = [];
         $scope.msgs = [];
@@ -35,7 +35,7 @@ define([
 
             var href = "index.html";
 
-            memberCallback($scope, data, href);
+            memberCallback($window, $scope, data, href);
 
         };
 

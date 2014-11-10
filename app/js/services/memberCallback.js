@@ -6,14 +6,19 @@ define(['app'
 ], function(app) {
     app.factory('memberCallback', [ function () {
 
-        return function($scope, data, href) {
+        return function($window, $scope, data, href) {
+            // Error
+            if(data.returnCode == 'error'){
+                $scope.msgs.push("서버와의 연결이 되지 않았습니다.");
+            }
+
             // Success
-            if (data.returnCode == '000') {
+            else if (data.returnCode == '000') {
                 // 성공 메세지
                 $scope.msgs.push("성공하였습니다.");
 
                 // 에디터 화면으로 이동
-                location.href = href //"#/articleEditor";
+                $window.location.href = href //"#/articleEditor";
             }
 
             // Invalid Arguments
