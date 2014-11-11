@@ -14,10 +14,10 @@
 <a href="join.html"> 회원가입 </a>
 <form name="loginForm" ng-submit='login()'>
 
-    <h1>Login Form</h1>
+    <h1>Career Box</h1>
 
     <div>
-        <label>Email</label>
+        <!--<label>Email</label>-->
         <input type="email" name="email" ng-model="userEmail" style='margin-left: 22px;' ng-required="true"
                ng-pattern="/^([\w\.-]+)@([a-z\d\.-]+)\.([a-z\.]{2,6})$/">
         <span ng-show="loginForm.email.$error.pattern">입력하신 이메일형식이 유효하지 않습니다. </span>
@@ -25,7 +25,7 @@
     </div>
 
     <div>
-        <label>Password</label>
+        <!--<label>Password</label>-->
         <input type="password" name="password" ng-model="userPassword" ng-required="true"
                ng-pattern="/^[a-z0-9_-]{6,18}$/" minlength="6" ng-maxlength="18">
         <span ng-show="loginForm.password.$error.pattern">패스워드는 6자이상 18자이하입니다. </span>

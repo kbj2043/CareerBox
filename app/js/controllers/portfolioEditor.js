@@ -14,6 +14,10 @@ define([
                 {collapsible: true, size: "300px"}
             ];
 
+            $('#editorTab a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            });
         });
     }]);
 

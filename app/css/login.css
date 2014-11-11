@@ -1,0 +1,42 @@
+html, body {
+    margin:0;
+    padding:0;
+    /*text-align: center;*/
+    overflow:hidden;
+}
+
+div, h1, h3 , ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type:none
+}
+a {
+    text-decoration:none
+}
+img {
+    border-style:none
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#loginForm{
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+    /*display: inline-block;*/
+}
+
+#loginForm #email input{
+
+}
+
+#loginForm #password input{
+
+}

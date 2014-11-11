@@ -1,0 +1,153 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+div, h1, h2, h3 , ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type:none;
+}
+
+a {
+    text-decoration:none;
+}
+
+img {
+    border-style:none;
+}
+
+/*좌측 메뉴 css*/
+#menu {
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#menu a#logo {
+    display:block;
+    width:150px;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    margin:50px auto;
+    border:solid 2px #fff;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    font-family:'arial'
+}
+
+#menu ul {
+    text-align:center;
+}
+#menu ul a {
+    display:block;
+    color:#666;
+    height:30px;
+    line-height:30px
+}
+#menu ul a:hover {
+    background-color:#000;
+    color:#fff;
+    text-decoration: none;
+}
+
+/*컨텐츠 부분 너비는 메뉴 제외한 100%*/
+#content {
+    margin-left: 240px;
+}
+
+/*상단 사용자 정보 css*/
+#content #user-info {
+    width: 100%;
+    height: 120px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+#content #user-info h2{
+    font-family:'arial';
+    line-height: 120px;
+}
+
+/*포트폴리오 리스트 css*/
+#content #portfolio-list {
+    width: 100%;
+    text-align: center;
+}
+
+#content #portfolio-list ul {
+    display: inline-block;
+    width: 1000px;
+    margin-top: 25px;
+}
+
+#content #portfolio-list ul li {
+    float: left;
+    margin: 25px;
+    position: relative;
+    box-shadow:0 1px 2px #3e3e3e;
+}
+
+#content #portfolio-list ul li .img{
+    background-color: #666666;
+    width: 200px;
+    height: 300px;
+    color: #fff;
+}
+
+#content #portfolio-list ul li .description{
+    background: rgba(0,0,0,0.74);
+    color: #fff;
+    font-family:'arial';
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+
+/*미디어 쿼리*/
+@media only screen and (max-width : 1240px) {
+
+    #content #portfolio-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    #content #portfolio-list ul {
+        display: inline-block;
+        width: 720px;
+        margin-top: 25px;
+    }
+
+    #content #portfolio-list ul li {
+        float: left;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width : 960px) {
+
+    #content #portfolio-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    #content #portfolio-list ul {
+        display: inline-block;
+        width: 480px;
+        margin-top: 25px;
+    }
+
+    #content #portfolio-list ul li {
+        float: left;
+        margin: 20px;
+    }
+}

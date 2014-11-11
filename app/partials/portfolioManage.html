@@ -1,16 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
-
-    <!-- Bootstrap core CSS -->
+    <title>portfolio manage</title>
     <link href="../libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-
-    <title>Portfolio Manage</title>
+    <link href="../css/portfolioManage.css" rel="stylesheet"/>
 </head>
-<body ng-controller="portfolioManage">
-<a href="portfolioEditor.html">포트폴리오 에디터</a>
 
+<body ng-controller="portfolioManage">
+
+<!--좌측 메뉴-->
+<div id="menu" class="aside">
+    <a id="logo">Career Box</a>
+    <ul id="gnb">
+        <li><a href="portfolioEditor.html">New Portfolio</a></li>
+        <li><a href="#">Personal Infomation</a></li>
+        <li><a href="#">Resumes</a></li>
+    </ul>
+</div>
+
+<!--컨텐츠 부분-->
+<div id="content">
+
+    <!--상단 사용자 정보-->
+    <div id="user-info">
+        <h2>Dahye's Portfolio</h2>
+    </div>
+
+    <!--사용자 포트폴리오 리스트-->
+    <div id="portfolio-list">
+        <ul>
+            <li>
+                <!--<div class="img">portfolio image1</div>-->
+                <img src="../img/testImage.png"/>
+                <div class="description">
+                    <h3>Portfolio Title</h3>
+                    <p>Portfolio Description</p>
+                </div>
+            </li>
+            <li>
+                <img src="../img/testImage.png"/>
+                <div class="description">
+                    <h3>Portfolio Title</h3>
+                    <p>Portfolio Description</p>
+                </div>
+            </li>
+            <li>
+                <img src="../img/testImage.png"/>
+                <div class="description">
+                    <h3>Portfolio Title</h3>
+                    <p>Portfolio Description</p>
+                </div>
+            </li>
+            <li>
+                <img src="../img/testImage.png"/>
+                <div class="description">
+                    <h3>Portfolio Title</h3>
+                    <p>Portfolio Description</p>
+                </div>
+            </li>
+            <li>
+                <img src="../img/testImage.png"/>
+                <div class="description">
+                    <h3>Portfolio Title</h3>
+                    <p>Portfolio Description</p>
+                </div>
+            </li>
+            <li>
+                <img src="../img/testImage.png"/>
+                <div class="description">
+                    <h3>Portfolio Title</h3>
+                    <p>Portfolio Description</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
 <script src="../libs/require/require.js" data-main="../main.js"></script>
+
 </body>
+
 </html>

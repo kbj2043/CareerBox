@@ -5,9 +5,19 @@ html, body {
     overflow:hidden;
 }
 
-div, h1, h3 , ul, li {
+div, h1, h3 , ul, li, pre {
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style-type:none
+}
+a {
+    text-decoration:none
+}
+img {
+    border-style:none
 }
 
 .clearfix:after {
@@ -18,12 +28,15 @@ div, h1, h3 , ul, li {
 
 #top-pane {
     height: 50px;
-    background-color: #eeeeee;
+    background-color: rgba(0,0,0,0.9);
     text-align: center;
 }
 
 #top-pane h1 {
     line-height: 50px;
+    color: #fff;
+    font-family:'arial'
+
 }
 
 #bottom-pane {
@@ -40,8 +53,35 @@ div, h1, h3 , ul, li {
     width: 135px;
 }
 
+#bottom-pane #pageEditor #pageSelect ul li a {
+    height: 40px;
+}
+
+#bottom-pane #pageEditor #pageSelect ul li a span {
+    line-height: 40px;
+}
+
 .delete {
     padding: 0px;
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
+}
+
+#bottom-pane #pageEditor #pageSelect ul li a .delBtn {
+    float: right;
+    margin-top: 8px;
+}
+
+#bottom-pane #page #stateBar {
+    background: #f3f3f3;
+    padding: 10px;
+}
+
+#bottom-pane #page #stateBar ul li {
+    float: left;
+}
+
+#bottom-pane #page #stateBar ul li pre {
+    padding: 5px;
+    margin-right: 5px;
 }
