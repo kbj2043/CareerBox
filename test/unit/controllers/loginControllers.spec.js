@@ -2,24 +2,24 @@
 
 define([
     'angularMocks', // 반드시 주입해주어야함.
-    'controllers/editorController'
+    'controllers/loginController'
 ], function() {
     'use strict';
 
-    describe('editorController', function(){
-        var editorController, scope, httpBackend, RequestHandler;
+    describe('loginController', function(){
+        var loginController, scope, httpBackend, RequestHandler;
 
         beforeEach(module('myApp'));
 
         beforeEach(inject(['$rootScope', '$controller','$httpBackend', function($rootScope, $controller, $httpBackend) {
             scope = $rootScope.$new();
-            editorController = $controller('editorController', {
+            loginController = $controller('loginController', {
                 $scope: scope
             });
 
             // 페이커 응답
             httpBackend = $httpBackend;
-            RequestHandler = $httpBackend.when('GET', 'http://210.118.74.166:8123/member/logout')
+            RequestHandler = $httpBackend.when('POST', 'http://210.118.74.166:8123/member/login',{ 'email': 'kbj7353@naver.com', 'password': '123456' })
                 .respond({returnCode: '000'});    // 요청과 응답은 $httpBackend의 expectPOST 메서드를 이용하여 언제든지 수정, 추가할 수 있음.
 
         }]));
@@ -29,8 +29,8 @@ define([
             httpBackend.verifyNoOutstandingRequest();
         });
 
-        it('editorController 컨트롤러가 있는가?', function() {
-            expect(editorController).not.toEqual(null);
+        it('loginController 컨트롤러가 있는가?', function() {
+            expect(loginController).not.toEqual(null);
         });
 
         it('$scope.errors', function() {
@@ -41,19 +41,23 @@ define([
             expect(scope.msgs).not.toEqual(null);
         });
 
-        it('$scope.logout 성공 테스트', function() {
+        it('$scope.login 성공 테스트', function() {
             // 함수 존재 여부 검사
-            expect(scope.logout).not.toEqual(null);
+            expect(scope.login).not.toEqual(null);
 
             // 콜백함수 존재 여부 검사
             expect(scope.callback).not.toEqual(null);
         });
 
-        it('logout 성공 테스트', function() {
+        it('login 성공 테스트', function() {
 
             // 페이커 응답 설정 : 성공 리턴 코드를 반환하는 케이스
-            httpBackend.expectGET('http://210.118.74.166:8123/member/logout')
+            httpBackend.expectPOST('http://210.118.74.166:8123/member/login',{ 'email': 'kbj7353@naver.com', 'password': '123456' })
                 .respond({returnCode: '000'});
+
+            // 파라미터 테스트 케이스 설정
+            scope.userEmail = 'kbj7353@naver.com'
+            scope.userPassword = '123456'
 
             // 콜백 함수 등록
             scope.callback = function(data) {
@@ -61,18 +65,22 @@ define([
             };
 
             // request 시작
-            scope.logout();
+            scope.login();
 
             // response 호출
             httpBackend.flush();
 
         });
 
-        it('logout 실패 테스트', function() {
+        it('login 실패 테스트', function() {
 
             // 페이커 응답 설정 : 실패 리턴 코드를 반환하는 케이스
-            httpBackend.expectGET('http://210.118.74.166:8123/member/logout')
+            httpBackend.expectPOST('http://210.118.74.166:8123/member/login',{ 'email': 'kbj2043@naver.com', 'password': '123456' })
                 .respond({returnCode: '001'});
+
+            // 파라미터 테스트 케이스 설정
+            scope.userEmail = 'kbj2043@naver.com'
+            scope.userPassword = '123456'
 
             // 콜백 함수 등록
             scope.callback = function(data) {
@@ -80,7 +88,7 @@ define([
             };
 
             // request 시작
-            scope.logout();
+            scope.login();
 
             // response 호출
             httpBackend.flush();

@@ -10,6 +10,10 @@ define(['app',
                 .success(function (data) {
                     callback(data);
                 })
+                .error(function(data, status, headers, config) {
+                    data.returnCode = 'error';
+                    callback(data);
+                });
         }
     }]);
 });

@@ -14,7 +14,7 @@ define([
     ng,
     app
     ) {
-    app.controller('loginController', ['$scope', 'httpLogin', 'memberCallback', function ($scope, httpLogin, memberCallback) {
+    app.controller('loginController', ['$scope', 'httpLogin', 'memberCallback', '$window', function ($scope, httpLogin, memberCallback, $window) {
         $scope.errors = [];
         $scope.msgs = [];
 
@@ -29,7 +29,7 @@ define([
 
             var href = "portfolioManage.html";
 
-            memberCallback($scope, data, href);
+            memberCallback($window, $scope, data, href);
 
         };
     }]);

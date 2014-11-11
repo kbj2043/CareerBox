@@ -1,19 +1,19 @@
 /*global describe beforeEach it expect */
 
 define([
-    'services/httpJoin',
+    'services/httpLogin',
     'angularMocks' // 반드시 주입해주어야함.
 ], function() {
     'use strict';
 
-    describe('httpJoin', function() {
+    describe('httpLogin', function(){
 
         beforeEach(module('myApp'));
 
-        it('should contain an httpJoin service',
+        it('should contain an httpLogin service',
             inject(['$injector',function($injector) {
-                var httpJoin = $injector.get('httpJoin');
-                expect(httpJoin).not.toEqual(null);
+                var httpLogin = $injector.get('httpLogin');
+                expect(httpLogin).not.toEqual(null);
 
             }])
         );
