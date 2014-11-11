@@ -1,0 +1,43 @@
+<!--<div ng-controller="menu">-->
+    <!--<ul>-->
+        <!--<li ng-repeat="menu in menuItems">-->
+            <!--<a href="#">{{menu}}</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->
+
+<!--<div id="otherEditor">-->
+    <!--<ul class="nav nav-tabs nav-justified" id="editorTab">-->
+        <!--<li class="active"><a href="#section">section</a></li>-->
+        <!--<li><a href="#article">article</a></li>-->
+        <!--<li><a href="#item">item</a></li>-->
+    <!--</ul>-->
+    <!--<div class="tab-content">-->
+        <!--<div class="tab-pane active" id="section">section</div>-->
+        <!--<div class="tab-pane" id="article">article</div>-->
+        <!--<div class="tab-pane" id="item">item</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div ng-controller="otherEditor">
+    <div kendo-tab-strip k-content-urls="[ null, null]">
+        <!-- tab list -->
+        <ul>
+            <li class="k-state-active">section</li>
+            <li>article</li>
+            <li>item</li>
+        </ul>
+
+        <div style="padding: 1em">
+            This is the section tab
+        </div>
+
+        <div style="padding: 1em">
+            This is the article tab
+        </div>
+
+        <div style="padding: 1em">
+            This is the item tab
+        </div>
+    </div>
+</div>

@@ -13,72 +13,18 @@
 <body ng-controller="portfolioManage">
 
 <!--좌측 메뉴-->
-<div id="menu" class="aside">
-    <a id="logo">Career Box</a>
-    <ul id="gnb">
-        <li><a href="portfolioEditor.html">New Portfolio</a></li>
-        <li><a href="#">Personal Infomation</a></li>
-        <li><a href="#">Resumes</a></li>
-    </ul>
-</div>
+<menu></menu>
 
 <!--컨텐츠 부분-->
 <div id="content">
-
     <!--상단 사용자 정보-->
     <div id="user-info">
         <h2>Dahye's Portfolio</h2>
     </div>
-
     <!--사용자 포트폴리오 리스트-->
-    <div id="portfolio-list">
-        <ul>
-            <li>
-                <!--<div class="img">portfolio image1</div>-->
-                <img src="../img/testImage.png"/>
-                <div class="description">
-                    <h3>Portfolio Title</h3>
-                    <p>Portfolio Description</p>
-                </div>
-            </li>
-            <li>
-                <img src="../img/testImage.png"/>
-                <div class="description">
-                    <h3>Portfolio Title</h3>
-                    <p>Portfolio Description</p>
-                </div>
-            </li>
-            <li>
-                <img src="../img/testImage.png"/>
-                <div class="description">
-                    <h3>Portfolio Title</h3>
-                    <p>Portfolio Description</p>
-                </div>
-            </li>
-            <li>
-                <img src="../img/testImage.png"/>
-                <div class="description">
-                    <h3>Portfolio Title</h3>
-                    <p>Portfolio Description</p>
-                </div>
-            </li>
-            <li>
-                <img src="../img/testImage.png"/>
-                <div class="description">
-                    <h3>Portfolio Title</h3>
-                    <p>Portfolio Description</p>
-                </div>
-            </li>
-            <li>
-                <img src="../img/testImage.png"/>
-                <div class="description">
-                    <h3>Portfolio Title</h3>
-                    <p>Portfolio Description</p>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <new-portfolio></new-portfolio>
 </div>
+
 <script src="../libs/require/require.js" data-main="../main.js"></script>
 </body>
 </html>

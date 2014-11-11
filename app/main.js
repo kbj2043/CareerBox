@@ -8,6 +8,7 @@ require.config({
     paths: {
         'angular': '../libs/angular/angular',
         'angular-route': '../libs/angular/angular-route',
+        'angular-bootstrap': '../libs/bootstrap/ui-bootstrap',
         'jquery': '../libs/jquery/jquery.min',
         'jquery-ui':'../libs/jquery/jquery-ui.min',
         'domReady': '../libs/require/domReady',
@@ -20,6 +21,10 @@ require.config({
         'kendo':{
             deps: ['angular', 'jquery'],
             exports: 'kendo'
+        },
+        'angular-bootstrap':{
+            deps: ['angular'],
+            exports: 'angular-bootstrap'
         },
         'angular': {
             deps: ['jquery'],

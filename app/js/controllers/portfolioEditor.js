@@ -1,7 +1,8 @@
 define([
     'jquery',
     'angular',
-    'app'
+    'app',
+    '../../component/otherEditor/component'
 ], function ($, ng, app) {
     app.controller('portfolioEditor', ['$scope', '$http', function ($scope) {
         $(document).ready(function () {

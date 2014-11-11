@@ -7,8 +7,7 @@ define([
     'angular',
     'app',
     'directives/version',
-    '../component/menu/component',
-    '../../component/memberlist/component'
+    '../component/menu/component'
 ], function(
     $,
     ng,

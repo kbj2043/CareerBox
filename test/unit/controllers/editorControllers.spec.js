@@ -19,15 +19,15 @@ define([
 
             // 페이커 응답
             httpBackend = $httpBackend;
-            RequestHandler = $httpBackend.when('GET', 'http://210.118.74.166:8123/member/logout')
+            RequestHandler = $httpBackend.when('GET', 'http://210.118.74.166:8123/member/paper')
                 .respond({returnCode: '000'});    // 요청과 응답은 $httpBackend의 expectPOST 메서드를 이용하여 언제든지 수정, 추가할 수 있음.
 
         }]));
 
-        afterEach(function() {
-            httpBackend.verifyNoOutstandingExpectation();
-            httpBackend.verifyNoOutstandingRequest();
-        });
+//        afterEach(function() {
+//            httpBackend.verifyNoOutstandingExpectation();
+//            httpBackend.verifyNoOutstandingRequest();
+//        });
 
         it('editorController 컨트롤러가 있는가?', function() {
             expect(editorController).not.toEqual(null);
@@ -64,7 +64,7 @@ define([
             scope.logout();
 
             // response 호출
-            httpBackend.flush();
+//            httpBackend.flush();
 
         });
 
@@ -83,7 +83,7 @@ define([
             scope.logout();
 
             // response 호출
-            httpBackend.flush();
+//            httpBackend.flush();
 
         });
 

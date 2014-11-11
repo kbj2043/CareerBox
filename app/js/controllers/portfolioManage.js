@@ -4,11 +4,15 @@
 define([
     'jquery',
     'angular',
-    'app'
+    'app',
+    '../../component/menu/component',
+    '../../component/newPortfolio/component'
+
 ], function ($, ng, app) {
     app.controller('portfolioManage', ['$scope', '$http', function ($scope, $http) {
         $(document).ready(function() {
             console.log('load');
         });
     }]);
+
 });
